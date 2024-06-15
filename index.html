@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portifólio</title>
+        <style>
+            body{
+                padding: 10px;
+            }
+            .Frontend{
+                font-size: 50px;
+            }
+            .nome{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="nome">Olá, meu nome é Ana Carolina</p>
+        <H1 class="Frontend">FrontEnd<br>
+        Developer</H1>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to display Date and Time.</button>
+        <p id="demo"></p>
+
+        Número 1 = <input type="text" id="Num1"> +
+        Número 2 = <input type="text" id="Num2">
+        Total = <input type="text" id="Total">
+    </body>
+    <script>
+        //document é uma informação que corresponde a nossa página
+        //document.body.style.backgroundColor - é para modificar no estilo do body a cor de fundo
+        // Para criar a caixinha a gente usa o let
+        let listaCores = ['yellow', 'blue', 'red', 'green', 'pink'];
+        document.body.style.backgroundColor = listaCores[4];
+
+        function trocarCores(){
+            document.body.style.backgroundColor = listaCores[Math.floor(5*Math.random())]; 
+            //Math biblioteca do js e random para pegar o número aleátorio
+            //Math.floor - ele pega os número e apaga os decimals
+        }
+
+        setInterval(trocarCores ,1000);
+        // um intervalo que quer que aconteça algo, então é o que ele quer que faça, para a distancia de um para o outro
+    </script>
+</html>
