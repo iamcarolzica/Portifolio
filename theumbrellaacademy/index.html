@@ -1,0 +1,521 @@
+<!doctype html>
+<html>
+<head>
+<title>THE UMBRELLA ACADEMY</title>
+
+<link href="https://fonts.googleapis.com/css?family=Akronim|Baloo+Chettan" rel="stylesheet">
+  <style>
+  body
+	  {
+	  background-color:purple;
+	  font-family: 'Baloo Chettan', cursive;
+	  }
+  *
+	  {
+	  margin:0px;
+	  }
+  div
+	  {
+	  overflow:auto;
+	  }
+  
+  #menu
+	{
+	position:relative;
+	background-color:pink;
+	
+	}
+  
+ 
+  
+  
+
+	*
+		{
+		 box-sizing: border-box;
+		 margin:0px;
+		}
+
+
+	header 
+		{ 
+		  font: 25px Arial, Helvetica, sans-serif; /* Tamanho e 
+		  família de fontes */
+		  color: #7D2116; /* Cor da fonte */
+		  border-top: 14px solid #7FD991; /* Borda em cima */
+		  border-left: 2px solid #7FD991; /* Borda a esquerda*/
+		  padding-left:5px; /* Espaçamento do texto a esquerda */
+		  color:white;
+		  background-color: rgba(0,0,0,0.1);
+		} 
+
+	#Galeria
+		{   
+		  height:100px; 
+		}
+
+	.CaixaFotos
+		{
+		 width:100%;
+		   position:absolute;
+		}
+
+	.polaroid
+		{  
+		  width: 20%; /* para navegadores que não suportam calc() */
+		  width: calc(20% - 20px); /* para suporte nativo */
+		  background-color: rgba(255,255,255,0.6);
+		  box-shadow: 10px 10px 5px black;
+		  margin:10px;
+		  float:Left;
+		 
+		}
+	.polaroid:hover
+		{
+		  background-color: white;
+		  transition: background 1s;
+
+		}
+
+	.polaroid img
+		{
+		  display :none;
+		}
+
+	.polaroid:hover img
+		{
+		  display :Block;
+		  transition: display 1s;
+		}
+	.container 
+		{
+		  text-align: center;   
+		}
+	
+
+	#Ampliada 
+		{
+		  width: 50%;   
+		  background-color: white;
+		  box-shadow: 10px 10px 5px black;
+		  margin:10px auto;  
+		}
+
+
+	#Ampliada .titulo 
+		{
+		  text-align: center;
+		  padding: 5px;
+		  font-weight:bold;    
+		}
+	h1
+		{
+		font-family: 'Akronim', cursive;
+		text-align:center;
+		}
+
+	.corpo 
+		{
+		height: 200px;
+		}
+		
+	ul 
+		{
+		  text-align: left;
+		  display: inline;
+		  margin: 0;
+		  padding: 15px 4px 17px 0;
+		  list-style: none;
+		  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+		}
+
+	ul li 
+		{
+		  font: bold 12px/18px sans-serif;
+		  display: inline-block;
+		  margin-right: -4px;
+		  position: relative;
+		  padding: 15px 20px;
+		  background: #fff;
+		  cursor: pointer;
+		  transition: all 0.2s;
+		}
+
+	ul li:hover 
+		{
+		  background: #555;
+		  color: #fff;
+		}
+
+	ul li ul 
+		{
+		  padding: 0;
+		  position: absolute;
+		  top: 48px;
+		  left: 0;
+		  width: 150px;
+		  box-shadow: none;
+		  display: none;
+		  opacity: 0;
+		  visibility: hidden;
+		  transition: opacity 0.2s;
+		}
+		ul li ul li 
+		{ 
+			background: #555; 
+			display: block; 
+			color: #fff;
+			text-shadow: 0 -1px 0 #000;
+		}
+		ul li ul li:hover 
+		{ 
+			background: #666; 
+		}
+
+		ul li:hover ul {
+		  display: block;
+		  opacity: 1;
+		  visibility: visible;
+		}
+</style>
+
+</head>
+<body >
+
+<body text="oragem">
+  <div id="menu"> 
+  <ul>
+		<li>
+				<a href="#SI">SINOPSE</a>
+		</li>
+		<li>
+				<a href="#td">SOBRE</a>
+		</li>
+		<li>
+					<a href="#ps">PERSONAGENS</a>
+			<ul>
+				<li>
+							<a href="#sr">SIR REGINALD HARGREEVES</a>
+				</li>
+				<li>
+							<a href="#sp">SPACEBOY</a>
+				</li>
+				<li>
+							<a href="#CB">KRAKEN</a>
+				</li>
+				<li>
+							<a href="#all">RUMOR</a>
+				</li>
+				<li>
+							<a href="#kl">SÉANCE</a>
+				</li>
+				<li>
+							<a href="#ga">O GAROTO</a>
+				</li>
+				<li>
+							<a href="#ho">HORROR</a>
+				</li>
+				<li>
+							<a href="#va">VANYA</a>
+				</li>
+				<li>
+							<a href="#po">POGO</a>
+				</li>
+				<li>
+							<a href="#hc">HANZEL E CHA-CHA</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+  </div>
+  <div>
+    <h1>The Umbrella Academy !</h1>
+	
+     <iframe  width="560" height="315" src="https://www.youtube.com/embed/5_4SW8HHfUs" 
+	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+	allowfullscreen></iframe>
+<br>
+<br>
+     <div>	
+		<a name="SI"> </a>	 
+       <img src="TheUmbrellaAcademy.jpg" align="left"> 
+	   <a href="#menu"><strong>SINOPSE</strong></a>
+	   <br>
+	   <br>
+	   Antes de falecer, o milionário Sir Reginald Hargreeves 
+	   adotou sete crianças a fim de treiná-las para combater o 
+	   mal. Depois que ele morre misteriosamente, esses jovens 
+	   habilidosos unem suas forças para seguir o caminho para 
+	   o qual seu pai adotivo os criou e acabam se envolvendo 
+	   em um mundo muito mais perigoso do que eles imaginavam 
+	   ser possível.
+	   	 </div>  
+	 <br><br>
+	 <div>
+<a name="td"></a>	 
+	  
+	   <a href="#menu"><strong>SOBRE</strong></a>
+	   <br>
+	   The Umbrella Academy é uma série de HQ's escrita por Gerard Way e ilustrada por 
+	   Gabriel Bá, vencedora do Eisner Award de "Melhor Minissérie"
+	   em 2008. O enredo acompanha um grupo de seis crianças dotadas 
+	   de super-poderes, que foram adotadas por um milionário e 
+	   criadas como super-heróis.Anos depois de sua primeira aventura, 
+	   quando as crianças enfrentaram uma enlouquecida Torre Eiffel, a 
+	   equipe se separou e um fato obrigará essa família a se reunir. 
+	   </div>
+	   <br>
+	   <br>
+	 <div>
+<a name="ps"></a>
+	 
+
+	   <a href="#menu"><strong>PERSONAGENS </strong></a>
+	   <br>
+	   A academia é liderada por "O Monóculo" (Sir Reginald Hargreeves), 
+	   um alienígena disfarçado . Ele adotou os membros da 
+	   Umbrella Academy no nascimento que inclui Número 1 (Luther 
+	   Hargreeves), Número 2 (Diego Hargreeves), Número 3 (Allison Hargreeves)
+	   , Número 4 (Klaus Hargreeves), Número Cinco (The Boy), Número 6 (
+	   Ben Hargreeves), e Número 7 (Vanya Hargreeves)
+<section id="Galeria">
+	  <div class="CaixaFotos">
+		  <div class="polaroid">
+		  <div class="container">
+			<font color="black"><p>Número 1</p></font>
+			</div>
+			<img src="numeroUmDois.jpg" alt="Janela I" style="width:100%"
+				 onClick="document.getElementById('imgAmpliada').src='numeroUmDois.jpg'">
+			
+		  </div>
+		  
+		  
+		  <div class="polaroid">
+		  <div class="container">
+			<font color="black"><p>Número 2</p></font>
+			</div>
+			<img src="KrakenDois.jpg" alt="Janela II" style="width:100%"
+			onClick="document.getElementById('imgAmpliada').src='KrakenDois.jpg'">
+			
+		  </div>
+		  
+		  <div class="polaroid">
+		  <div class="container">
+			<font color="black"><p>Número 3</p></font>
+			</div>
+			<img src="allisonDois.jpg" alt="Janela III" style="width:100%"
+			onClick="document.getElementById('imgAmpliada').src='allisonDois.jpg'">
+			
+		  </div>  
+		  
+		  <div class="polaroid">
+		  <div class="container">
+			<font color="black"><p>Número 4</p></font>
+			</div>
+			<img src="klausDois.jpg" alt="Janela IV" style="width:100%"
+			onClick="document.getElementById('imgAmpliada').src='klausDois.jpg'">
+			
+		  </div>
+		  
+		  <div class="polaroid">
+		  <div class="container">
+			<font color="black"><p>Número 5</p></font>
+			</div>
+			<img src="garotoDois.jpg" alt="Janela V" style="width:100%"
+			onClick="document.getElementById('imgAmpliada').src='garotoDois.jpg'">
+			
+		  </div>
+		  
+		  <div class="polaroid">
+		  <div class="container">
+			<font color="black"><p>Número 6</p></font>
+			</div>
+			<img src="seis.jpg" alt="Janela V" style="width:100%"
+			onClick="document.getElementById('imgAmpliada').src='seis.jpg'">
+			
+		  </div>
+		  <div class="polaroid">
+		  <div class="container">
+			<font color="black"><p>Número 7</p></font>
+			</div>
+			<img src="vanyaDois.jpg" alt="Janela V" style="width:100%"
+			onClick="document.getElementById('imgAmpliada').src='vanyaDois.jpg'">
+			
+		  </div>
+		  <div class="polaroid">
+		  <div class="container">
+			<font color="black"><p>Todos Juntos</p></font>
+			</div>
+			<img src="umbrella1-capa.jpg" alt="Janela V" style="width:100%"
+			onClick="document.getElementById('imgAmpliada').src='umbrella1-capa.jpg'">
+			
+		  </div>
+		  
+		  <br style="clear: both;">
+	  </div>
+	 
+	 </section> 
+
+	 <div id="Ampliada" >
+		<div class="titulo">
+		</div>
+		<img src="umbrella1-capa.jpg" align="left" id="imgAmpliada" alt="Janela V" style="width:100%">   
+	 </div>  
+	  
+</section>	   
+	   </div>	 	   
+     <br> <br>	 
+	 <div>
+<a name="sr"></a>	 
+	   <img src="Monoculo.jpg" align="right">
+	   <a href="#menu"><strong>Sir Reginald Hargreeves </strong></a>
+	   é um alienígena disfarçado que mudou a humanidade com grandes 
+	   invenções científicas. Além de medalhista olímpico é vencedor do 
+	   Prêmio Nobel por seu trabalho de aperfeiçoamento cerebral de 
+	   chimpanzés. Já adulto, O Monóculo saiu em busca de crianças que 
+	   nasceram de forma inexplicável e com elas quais formou a equipe 
+	   Umbrella Academy para salvar o mundo (mesmo que ele próprio não 
+	   soubesse exatamente de que). Hargreeves é lembrado como um pai 
+	   terrível, causando mágoa em boa parte da equipe. Na série o 
+	   personagem é interpretado por Colm Feore.	 
+	   </div>	  
+     <br> <br>	 
+	 <div>
+		<a name="sp"></a>	 
+	   <img src="Spaceboy.jpg" align="left">
+	   <a href="#menu"><strong>SPACEBOY/LUTHER/NÚMERO 1</strong></a>
+	    é o líder da equipe criada pelo Sr Monóculo. Ele conta 
+	   com super-força e, desde de pequeno, sonha em viajar para o 
+	   espaço. Apesar de ter se tornado o primeiro garoto a ir para 
+	   o espaço, ele sofre um acidente que destrói seu corpo e, por 
+	   isso, acaba acoplado a um corpo de gorila. Ele é o único que 
+	   não esconde a admiração pelo “pai” e após a separação do time 
+	   acaba morando na lua sozinho para evitar um eventual ataque à 
+	   Terra. Na série o personagem é interpretado por Tom Hopper.	 
+	   </div>	
+<br> <br>
+<div>
+		<a name="CB"></a>	 
+	   <img src="Kraken.jpg" align="right">
+	   <a href="#menu"><strong>KRAKEN/DIEGO/NÚMERO 2</strong></a>
+	    é uma espécie de Batman no universo de Umbrella Academy. 
+	   Sombrio e sempre preparado para qualquer adversidade, Diego 
+	   consegue segurar o ar embaixo d’água por um longo período e tem 
+	   uma grande habilidade com facas. Embora tenha boa relação com 
+	   Inspetor Lupo, o chefe de polícia da cidade, o Número 2 é o mais 
+	   rebelde do grupo e tem sérios problemas com Spaceboy. Após o fim 
+	   do grupo, ele virou uma espécie de vigilante, sempre pronto para 
+	   impedir a criminalidade. Na série o personagem é interpretado por 
+	   David Castañeda.
+	   
+</div>
+<br> <br>
+<div>
+		<a name="all"></a>	 
+	   <img src="Rumor.jpg" align="left">
+	   <a href="#menu"><strong>RUMOR/ALLISON/NÚMERO 3</strong></a>
+	    tem a capacidade de alterar a realidade ao mentir.
+	   Depois de sair da Umbrella Academy, ela casou com seu namorado, 
+	   Patrick, e teve uma filha chamada Claire. Contudo, eventualmente 
+	   ela se divorciou e seu ex-marido ficou com a custódia de sua 
+	   filha. Ela e Spaceboy vivem um amor mal resolvido e a garota 
+	   tem uma mão cibernética – uma vez que a original foi devorada 
+	   pelo grande rival da equipe, o Dr. Terminal. Na série a 
+	   personagem é interpretada por Emmy Raver-Lampman.
+
+	 </div>
+	 <br> <br>
+	 <div>
+		<a name="kl"></a>	 
+	   <img src="Seance.jpg" align="right">
+	   <a href="#menu"><strong>SÉANCE/KLAUS/NÚMERO 4</strong></a>
+	    é capaz de conversar com os mortos e ainda conta com 
+	   poderes como a capacidade de levitar e telecinese – um poder 
+	   que nem ele mesmo sabe a extensão. Acredita-se que, por conta 
+	   de sua ligação com o outro mundo, ele é incapaz de morrer – 
+	   o que o tornou um viciado em drogas. Na série o personagem 
+	   é interpretado por Robert Sheehan.
+
+	 </div>
+	 <br> <br>
+	 <div>
+		<a name="ga"></a>	 
+	   <img src="Cinco.jpg" align="left">
+	   <a href="#menu"><strong>O GAROTO/NÚMERO 5</strong></a>
+	    tem a capacidade de viajar no tempo e, aos 10 anos, 
+	   desapareceu pois decidiu fugir de casa indo para o futuro – 
+	   apesar de Hargreeves ter alertado o jovem que ele seria 
+	   incapaz de voltar ao passado. Mais de 50 anos se passaram 
+	   até que ele descobrisse como voltar no tempo, quando já 
+	   era um senhor de 60 anos de idade. Ele cai na época em que 
+	   seus irmãos adotivos estão com 30 anos, mas uma anomalia no 
+	   tempo fez com que ele ficasse preso em um corpo de 10 anos. 
+	   Na série o personagem é interpretado por Aidan Gallagher.
+
+	 </div><br> <br>
+	 <div>
+		<a name="ho"></a>	 
+	   <img src="Seis.jpg" align="right">
+	   <a href="#menu"><strong>HORROR/BEN/NÚMERO 6</strong></a>
+	   <br>
+	   Quando a história do grupo adulto começa, Horror já está morto. 
+	   Ele contava com monstros de outra dimensão sob sua pele e 
+	   acabou morrendo durante uma missão, óbito que assombra Spaceboy 
+	   até os dias atuais. Na entrada da Umbrella Academy há uma 
+	   estátua em sua homenagem. Na série é interpretado por Justin 
+	   H. Min.
+
+	 </div><br> <br>
+	 <div>
+		<a name="va"></a>	 
+	   <img src="Vanya.jpg" align="left">
+	   <a href="#menu"><strong>NÚMERO 7/VANYA</strong></a>
+	   inicialmente não conta com poderes e é constantemente 
+	   humilhada por Hargreeves – que a impede de lutar ao lado de 
+	   seus irmãos. Ela é conhecida por ter escrito um livro detalhando 
+	   sua vida com a Umbrella Academy, algo que causou ira em alguns 
+	   de seus irmãos adotivos. A garota tem grande habilidade no 
+	   violino e, no dia em que conhece o Condutor, verá sua vida se 
+	   transformar. Na série a personagem é interpretada por Ellen Page.
+
+	 </div>
+	 <br> <br>
+	 <div>
+		<a name="po"></a>	 
+	   <img src="Pogo.jpg" align="right">
+	   <a href="#menu"><strong>POGO</strong></a>
+	   <br>
+	   Phinneus Pogo foi um dos chimpanzés alterados geneticamente 
+	   pelo Monóculo, que o manteve como parte da família. Pogo já 
+	   trabalhava para Hargreeves quando as crianças foram adotadas, 
+	   servindo como babá e figura paterna para muitos deles. Na 
+	   série o personagem é interpretado por Adam Godley por captura 
+	   de movimentos.
+
+	 </div>
+	 <br> <br>
+	 <div>
+		<a name="hc"></a>	 
+	   <img src="Hazel.jpg" align="left">
+	   <a href="#menu"><strong>HAZEL E CHA-CHA</strong></a>
+	   <br>
+	   No universo de Umbrella Academy existe uma agência chamada 
+	   Temps Aeternalis que controla a preservação da cronologia do 
+	   espaço-tempo. Para garantir que tudo continue da forma como 
+	   deve ser, a iniciativa contrata agentes para consertar desvios 
+	   à qualquer preço. Apesar de sua aparência divertida, Hazel e 
+	   Cha-Cha são os mais sanguinários empregados e são enviados ao 
+	   presente em uma missão que cruza com os caminhos da família 
+	   super-heróica. Na série os personagens são interpretados por 
+	   Cameron Britton (Hazel) e Mary J. Blige (Cha-Cha).
+
+	 </div>
+	 
+	  <div id="menu"><a href="https://pt-br.facebook.com/NetflixUmbrellaAcademy/"><img src="./facebookDois.jfif" align="left" height="30px" >
+	  </a>
+	  
+	  <a href="https://www.instagram.com/umbrellaacad/?hl=pt-br"><img src="./instagramDois.png"  height="30px" align="left"></a>
+ </div>
+  
+</body>
+</html>
