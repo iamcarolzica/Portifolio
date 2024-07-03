@@ -1,45 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="Pt-br">
     <head>
-        <meta charset="utf-8">
-        <title>Portifólio</title>
+        <meta charset="UTF-8">
+        <title>Meu portifólio</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            body{
-                padding: 10px;
-            }
-            .Frontend{
-                font-size: 50px;
-            }
-            .nome{
-                font-size: 20px;
-            }
+                * {
+                    box-sizing: border-box;
+                }
+                .navbar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #333;
+                    padding: 15px 20px;
+                }
+
+                .navbar .logo {
+                    color: #fff;
+                    font-size: 1.5em;
+                }
+
+                .nav-links {
+                    list-style: none;
+                    display: flex;
+                }
+
+                .nav-links li {
+                    margin-left: 20px;
+                }
+
+                .nav-links a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1em;
+                    transition: color 0.3s ease;
+                }
+
+                .nav-links a:hover {
+                    color: #ddd;
+                }
+                .Apresentacao{
+                    background-color: #E0E1DD;
+                }
+                .trabalhosHtml{
+                    background-color: #7B8CA6;
+                }
+                .sobreMim{
+                    background-color: #465975;
+                }.certificados{
+                    background-color: #1D2639;
+                    color:white
+                }
+                .finalPage{
+                    background-color:#333;
+                    height: 200px;
+                    color: white;
+                    padding: 10px;
+                    font-size: 20px;
+                    
+                }
         </style>
+        <script  type="text/javascript">
+
+            function alteraDiv(textoNovo){
+               var div = document.getElementById("dvPrincipal");
+               div.innerHTML = textoNovo;  
+               
+            }   
+
+        
+            function buscaAjax()
+            {
+
+               var xhttp = new XMLHttpRequest(); //cria o obj "AJAX"
+
+               xhttp.onreadystatechange = function() 
+               {
+                
+                if (this.readyState == 4 && this.status == 200) 
+                { //a busca foi ok? so roda a function dps de buscar o arquivo externo
+                  var pecas = JSON.parse(this.responseText);
+                  montaTela(pecas);
+                }
+
+               }
+
+               xhttp.open("GET", "../back/pecas.php", true);
+               xhttp.send();
+            }
+        </script>
     </head>
-    <body>
-        <p class="nome">Olá, meu nome é Ana Carolina</p>
-        <H1 class="Frontend">FrontEnd<br>
-        Developer</H1>
+    <body id="myPage">
+        <nav class="navbar">
+            <div class="logo">Ana Carolina</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#sobreMim">Mais sobre mim</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#certificados">Certificações</a></li>
+            </ul>
+        </nav><br>
+        <div class="Apresentacao">
+            <img src="img/Foto de perfil.jpg" width="150px" align="left" style="border-radius: 100px; padding: 5px;">
+            <h1>Olá, me chamo Ana Carolina, tenho 20 anos.</h1>
+            <h2>Sejam bem vindo ao meu portifólio</h2>
+            <h3>Aqui irei apresentar alguns projetos que fiz na minha jornada de programação</h3>
+            <a href="https://www.github.com/iamcarolzica/"><img src="img/github.png" width="30px"></a>
+            <a href="https://www.linkedin.com/in/iamcarolzica/"><img src="img/linkedinRedondo.png" width="30px"></a>
+            <a href="https://drive.google.com/file/d/1J20kRvo6-C_YlXXZyGB-gZMKCjLiY-a1/view?usp=sharing" download="currículo carol.pdf"><img src="img/curriculo.png" width="30px"></a>
+        </div>
+        <br><br>
+        <div class="trabalhosHtml" id="projetos">
+            <div class="sedentarismo" align="left">
+                <a href="edfisica/oficial.html"><img src="edfisica/sedentarismo4.jpg" alt="imagem de pessoas sedentarias"></a><br>
+                <a href="edfisica/oficial.html" style="color: black;">Site sobre sedentarismo</a>
+            </div>
+            <div class="umbrellaacademy" align="right">
+                <a href="theumbrellaacademy/index.html"><img src="theumbrellaacademy/TheUmbrellaAcademy.jpg" alt="imagem de pessoas sedentarias" width="500px"></a><br>
+                <a href="theumbrellaacademy/index.html" style="color: black;">Site sobre the umbrella academy</a>
+            </div>
+            
+        </div>
+        <br><br>
+        <div class="sobreMim" id="sobreMim">
+            <h1>Quem sou eu?</h1>
+            <p>Meu nome é Ana Carolina, tenho 20 anos, sou estudante de ciência da computação</p>
+            <p>Gosto de academia, de jogar jogos de computador e de esportes.</p>
 
-        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to display Date and Time.</button>
-        <p id="demo"></p>
+        </div>
+        <div class="certificados" id="certificados">
+            <h1>Alguns certificados meus:</h1>
+        
+        </div>
+        <br><br>
+        <div class="finalPage" id="contato">
+            <p>Me encontre nas minhas redes sociais</p>
+            <a href="https://www.github.com/iamcarolzica/" style="color: inherit; text-decoration: none;"><img src="img/githubBranco.png" width="20px" height="20px"> GitHub</a>
+            <br><br>
+            <a href="https://www.linkedin.com/in/iamcarolzica/" style="color: inherit;text-decoration: none"><img src="img/linkedinRedondoBranco.png" width="20px" height="20px"> Linkedin</a>
+            <br><br>
+            <a href="https://drive.google.com/file/d/1J20kRvo6-C_YlXXZyGB-gZMKCjLiY-a1/view?usp=sharing" style="color: inherit;text-decoration: none"><img src="img/curriculoBranco.png" width="20px" height="20px">Currículo</a>
 
-        Número 1 = <input type="text" id="Num1"> +
-        Número 2 = <input type="text" id="Num2">
-        Total = <input type="text" id="Total">
+        </div>
     </body>
-    <script>
-        //document é uma informação que corresponde a nossa página
-        //document.body.style.backgroundColor - é para modificar no estilo do body a cor de fundo
-        // Para criar a caixinha a gente usa o let
-        let listaCores = ['yellow', 'blue', 'red', 'green', 'pink'];
-        document.body.style.backgroundColor = listaCores[4];
-
-        function trocarCores(){
-            document.body.style.backgroundColor = listaCores[Math.floor(5*Math.random())]; 
-            //Math biblioteca do js e random para pegar o número aleátorio
-            //Math.floor - ele pega os número e apaga os decimals
-        }
-
-        setInterval(trocarCores ,1000);
-        // um intervalo que quer que aconteça algo, então é o que ele quer que faça, para a distancia de um para o outro
-    </script>
 </html>
